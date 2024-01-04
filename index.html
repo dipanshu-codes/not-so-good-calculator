@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Not so good calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container mx-auto text-center px-10">
+    <header>
+      <h1 class="text-slate-800 text-4xl font-extrabold font-sans my-10">
+        Calculator for performing operations with two nums...
+      </h1>
+    </header>
+
+    <main class="max-w-xs mx-auto">
+      <section class="bg-slate-300 py-1 rounded-lg">
+        <h1 class="text-slate-800 text-2xl font-bold font-sans my-10">
+          Operation: <span id="num1">0</span> <span id="operator">+</span>
+          <span id="num2">0</span>
+        </h1>
+      </section>
+
+      <section class="my-10">
+        <div class="grid grid-cols-3 gap-2">
+          <div
+            id="one"
+            class="bg-slate-300 border-4 border-slate-700 shadow-xl shadow-slate-100 rounded-lg hover:cursor-pointer"
+          >
+            1
+          </div>
+          <div
+            id="two"
+            class="bg-slate-300 border-4 border-slate-700 shadow-xl shadow-slate-100 rounded-lg hover:cursor-pointer"
+          >
+            2
+          </div>
+          <div
+            id="three"
+            class="bg-slate-300 border-4 border-slate-700 shadow-xl shadow-slate-100 rounded-lg hover:cursor-pointer"
+          >
+            3
+          </div>
+          <div
+            id="four"
+            class="bg-slate-300 border-4 border-slate-700 shadow-xl shadow-slate-100 rounded-lg hover:cursor-pointer"
+          >
+            4
+          </div>
+          <div
+            id="five"
+            class="bg-slate-300 border-4 border-slate-700 shadow-xl shadow-slate-100 rounded-lg hover:cursor-pointer"
+          >
+            5
+          </div>
+          <div
+            id="six"
+            class="bg-slate-300 border-4 border-slate-700 shadow-xl shadow-slate-100 rounded-lg hover:cursor-pointer"
+          >
+            6
+          </div>
+          <div
+            id="seven"
+            class="bg-slate-300 border-4 border-slate-700 shadow-xl shadow-slate-100 rounded-lg hover:cursor-pointer"
+          >
+            7
+          </div>
+          <div
+            id="eight"
+            class="bg-slate-300 border-4 border-slate-700 shadow-xl shadow-slate-100 rounded-lg hover:cursor-pointer"
+          >
+            8
+          </div>
+          <div
+            id="nine"
+            class="bg-slate-300 border-4 border-slate-700 shadow-xl shadow-slate-100 rounded-lg hover:cursor-pointer"
+          >
+            9
+          </div>
+          <div
+            id="zero"
+            class="bg-slate-300 border-4 border-slate-700 shadow-xl shadow-slate-100 rounded-lg hover:cursor-pointer"
+          >
+            0
+          </div>
+        </div>
+      </section>
+
+      <section class="my-10">
+        <div class="grid grid-cols-5 gap-2">
+          <div
+            id="add-op"
+            class="bg-slate-500 border-4 border-slate-900 shadow-2xl shadow-slate-200 rounded-lg hover:cursor-pointer"
+          >
+            +
+          </div>
+          <div
+            id="sub-op"
+            class="bg-slate-500 border-4 border-slate-900 shadow-2xl shadow-slate-200 rounded-lg hover:cursor-pointer"
+          >
+            -
+          </div>
+          <div
+            id="mul-op"
+            class="bg-slate-500 border-4 border-slate-900 shadow-2xl shadow-slate-200 rounded-lg hover:cursor-pointer"
+          >
+            *
+          </div>
+          <div
+            id="div-op"
+            class="bg-slate-500 border-4 border-slate-900 shadow-2xl shadow-slate-200 rounded-lg hover:cursor-pointer"
+          >
+            /
+          </div>
+          <div
+            id="mod-op"
+            class="bg-slate-500 border-4 border-slate-900 shadow-2xl shadow-slate-200 rounded-lg hover:cursor-pointer"
+          >
+            %
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-slate-300 py-1 rounded-lg">
+        <h1 class="text-slate-800 text-2xl font-bold font-sans my-10">
+          Result: <span id="result">0</span>
+        </h1>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
